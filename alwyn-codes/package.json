@@ -1,7 +1,7 @@
 {
 	"name": "alwyn-codes",
 	"private": true,
-	"version": "2510.07",
+	"version": "2510.17",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",

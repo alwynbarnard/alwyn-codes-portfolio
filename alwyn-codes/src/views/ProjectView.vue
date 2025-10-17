@@ -30,8 +30,8 @@
 	</div>
 </template>
 <script setup lang="ts">
-import SkillList from "@/components/SkillList.vue";
-import { Projects, type ProjectContainer } from "@/assets/APIData";
+import SkillList from "../components/SkillList.vue";
+import { Projects, type ProjectContainer } from "../assets/APIData";
 import { useRoute } from "vue-router";
 import { ref } from "vue";
 
@@ -42,15 +42,27 @@ const filteredProjectList = Projects.filter((x) => {
 	return x.projectId == projectId.value;
 })[0];
 
-const project: ProjectContainer = {
-	projectId: filteredProjectList.projectId,
-	projectName: filteredProjectList.projectName,
-	projectDetail: filteredProjectList.projectDetail,
-	projectImageSrcs: filteredProjectList.projectImageSrcs,
-	projectLink: filteredProjectList.projectLink,
-	projectSynopsis: filteredProjectList.projectSynopsis,
-	projectTools: filteredProjectList.projectTools,
-};
+const project: ProjectContainer = filteredProjectList
+	? {
+			projectId: filteredProjectList.projectId,
+			projectName: filteredProjectList.projectName,
+			projectDetail: filteredProjectList.projectDetail,
+			projectImageSrcs: filteredProjectList.projectImageSrcs,
+			projectLink: filteredProjectList.projectLink,
+			projectSynopsis: filteredProjectList.projectSynopsis,
+			projectTools: filteredProjectList.projectTools,
+			projectType: "",
+	  }
+	: {
+			projectId: "",
+			projectName: "",
+			projectDetail: [],
+			projectImageSrcs: [],
+			projectLink: "",
+			projectSynopsis: "",
+			projectTools: [],
+			projectType: "",
+	  };
 </script>
 <style scoped>
 .heading {

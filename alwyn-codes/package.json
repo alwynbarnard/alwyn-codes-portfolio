@@ -18,6 +18,7 @@
 		"@mdi/font": "^7.4.47",
 		"@mdi/js": "^7.4.47",
 		"@tsconfig/node22": "^22.0.2",
+		"firebase": "^12.4.0",
 		"roboto-fontface": "^0.10.0",
 		"vite-plugin-vuetify": "^2.1.2",
 		"vue": "^3.5.22",

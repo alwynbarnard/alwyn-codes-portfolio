@@ -33,7 +33,7 @@
 </template>
 
 <script setup lang="ts">
-import { WorkHistoryData } from "@/assets/APIData";
+import { WorkHistoryData } from "../assets/APIData";
 </script>
 
 <style>

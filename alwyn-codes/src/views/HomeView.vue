@@ -71,18 +71,13 @@
 
 <script setup lang="ts">
 import { ref, computed } from "vue";
-import Contact from "@/components/ContactInfo.vue";
-import SkillList from "@/components/SkillList.vue";
-import ProjectSummary from "@/components/ProjectSummary.vue";
-import HeroSection from "@/components/HeroSection.vue";
-import WorkHistory from "@/components/WorkHistory.vue";
-import FooterSection from "@/components/FooterSection.vue";
-import {
-	ContactDetails,
-	Projects,
-	SkillsList,
-	type ProjectContainer,
-} from "@/assets/APIData";
+import Contact from "../components/ContactInfo.vue";
+import SkillList from "../components/SkillList.vue";
+import ProjectSummary from "../components/ProjectSummary.vue";
+import HeroSection from "../components/HeroSection.vue";
+import WorkHistory from "../components/WorkHistory.vue";
+import FooterSection from "../components/FooterSection.vue";
+import { ContactDetails, Projects, SkillsList } from "../assets/APIData";
 
 const currentTab = ref("bi");
 const projectList = Projects;

@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import { ContactDetails } from "@/assets/APIData";
+import { ContactDetails } from "../assets/APIData";
 </script>
 
 <style scoped>

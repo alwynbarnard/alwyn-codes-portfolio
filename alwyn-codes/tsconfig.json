@@ -21,7 +21,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
+       "@/*": ["src/*"],
       "@Type_Declarations/*": ["src/Type_Declarations/*"],
       "@fortawesome/free-brands-svg-icons": ["node_modules/@fortawesome/free-brands-svg-icons"]
     }

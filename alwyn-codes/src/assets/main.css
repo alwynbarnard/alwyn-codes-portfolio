@@ -1,0 +1,135 @@
+@import './base.css';
+
+:root {
+  --primary-text-color: snow;
+  --primary-background-color: black;
+  --primary-button-color: palegreen;
+  --primary-button-boxshadow: 0 0 0.313rem palegreen, 0 0 1.563rem palegreen;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+
+#app {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+section:not(#hero) {
+  padding: 2rem;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.title {
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.188rem;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 800;
+}
+/* Medium screens (769px - 1024px) */
+@media screen and (max-width: 1024px) {
+  section:not(#hero) {
+    padding: 1rem;
+  }
+}
+
+/* Small screens (481px - 768px) */
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+  body {
+    font-size: 0.875rem;
+  }
+  .projects-showcase {
+    margin: 0;
+  }
+}
+
+/* Extra small screens (up to 480px) */
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 3rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
+
+.v-application {
+  background-color: black;
+  color: snow;
+}
+
+.primary-button {
+  box-shadow:
+    0 0 0.313rem palegreen,
+    0 0 1.563rem palegreen;
+  background-color: palegreen;
+  color: black;
+  padding: 0.938rem 3.438rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  & a {
+    color: black;
+    font-weight: bold;
+  }
+  &:hover {
+    box-shadow:
+      0 0 0.313rem palegreen,
+      0 0 1.563rem palegreen,
+      0 0 3.125rem palegreen,
+      0 0 6.25rem palegreen,
+      0 0 12.5rem palegreen;
+  }
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

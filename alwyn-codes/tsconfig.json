@@ -1,0 +1,29 @@
+{
+  "module": "esnext",
+  "resolveJsonModule": true,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "isolatedModules": true,
+  "files": [],
+  "allowJs": true,
+  "noImplicitAny": true,
+  "noImplicitThis": true,
+  "noImplicitReturns": true,
+  "moduleResolution": "node", 
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    },
+    {
+      "path": "./tsconfig.app.json"
+    }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@Type_Declarations/*": ["src/Type_Declarations/*"],
+      "@fortawesome/free-brands-svg-icons": ["node_modules/@fortawesome/free-brands-svg-icons"]
+    }
+  }
+}

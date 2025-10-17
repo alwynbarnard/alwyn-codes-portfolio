@@ -1,0 +1,37 @@
+{
+	"name": "alwyn-codes",
+	"private": true,
+	"version": "2510.07",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc -b && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"@babel/traverse": "^7.28.4",
+		"@fortawesome/fontawesome-svg-core": "^7.1.0",
+		"@fortawesome/free-brands-svg-icons": "^7.1.0",
+		"@fortawesome/free-solid-svg-icons": "^7.1.0",
+		"@fortawesome/vue-fontawesome": "^3.1.2",
+		"@hotjar/browser": "^1.0.9",
+		"@mdi/font": "^7.4.47",
+		"@mdi/js": "^7.4.47",
+		"@tsconfig/node22": "^22.0.2",
+		"roboto-fontface": "^0.10.0",
+		"vite-plugin-vuetify": "^2.1.2",
+		"vue": "^3.5.22",
+		"vue-router": "^4.6.3",
+		"vuetify": "^3.10.5",
+		"webfontloader": "^1.6.28"
+	},
+	"devDependencies": {
+		"@types/node": "^24.6.0",
+		"@types/webfontloader": "^1.6.38",
+		"@vitejs/plugin-vue": "^6.0.1",
+		"@vue/tsconfig": "^0.8.1",
+		"typescript": "~5.9.3",
+		"vite": "^7.1.7",
+		"vue-tsc": "^3.1.0"
+	}
+}
